@@ -118,6 +118,9 @@ debug.enable.sglscale=1
 #property to enable fingerprint
 persist.qfp=false
 
+# FRP
+ro.frp.pst=/dev/block/platform/soc/7824900.sdhci/by-name/frp
+
 # FM
 ro.fm.transmitter=false
 
