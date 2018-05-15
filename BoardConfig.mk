@@ -225,11 +225,17 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Shim
 TARGET_LD_SHIM_LIBS := \
-    /system/vendor/bin/adspd|libshim_adsp.so \
-    /system/vendor/lib/libmot_gpu_mapper.so|libgpu_mapper_shim.so \
+    /vendor/bin/adspd|libshim_adsp.so \
+    /vendor/lib/libmot_gpu_mapper.so|libgpu_mapper_shim.so \
     /system/lib/libjustshoot.so|libjustshoot_shim.so \
-    /system/vendor/lib/libjustshoot.so|libjustshoot_shim.so \
-    /system/vendor/lib64/libmdmcutback.so|libqsap_shim.so
+    /vendor/lib/libjustshoot.so|libjustshoot_shim.so \
+    /vendor/lib64/libmdmcutback.so|libqsap_shim.so
+
+# Split selinux policy
+
+TARGET_COPY_OUT_VENDOR := vendor
+BOARD_VENDORIMAGE_PARTITION_SIZE := 665845760
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
