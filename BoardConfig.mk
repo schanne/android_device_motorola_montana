@@ -67,4 +67,4 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := cedric_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
 
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/cryptfs_hw
