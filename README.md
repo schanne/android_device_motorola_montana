@@ -22,8 +22,10 @@ Copyright 2017 - The LineageOS Project.
 
 ![Moto G5](http://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5-1.jpg "Moto G5")
 
-## How To Compile
 ------------------
+
+## How To Compile
+
 
 First you need to download and sync the omni source
 
