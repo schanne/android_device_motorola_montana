@@ -27,7 +27,7 @@ Copyright 2017 - The LineageOS Project.
 ## How To Compile
 
 
-First you need to download and sync the omni source
+First you need to download and sync the minimal TWRP source
 
     repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1 --depth=1 --current-branch
     repo sync --force-broken --force-sync --current-branch
