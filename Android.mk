@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-ifneq ($(filter cedric,$(TARGET_DEVICE)),)
-
 LOCAL_PATH := $(call my-dir)
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
+ifeq ($(TARGET_DEVICE),cedric)
+
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 endif
