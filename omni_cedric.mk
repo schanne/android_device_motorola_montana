@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 
 # Define version
-TW_DEVICE_VERSION := 1
+TW_DEVICE_VERSION := 2
 
 # Screen density
 PRODUCT_AAPT_CONFIG         := normal
