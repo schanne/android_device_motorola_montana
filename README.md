@@ -1,63 +1,30 @@
-TWRP device tree for Motorola Moto G5 (Cedric)
+[Notes for building TWRP](https://github.com/montanadevelopment/android_device_motorola_montana/blob/twrp-7.1/notes.md)
+
+---
+
+Copyright (C) 2017-2019 - The LineageOS Project.
+ 
+Device configuration for Moto G5S (XT1792 XT1793 XT1794 XT1795 XT1799-2)
 ===========================================
-
-The Motorola Moto G5 (codenamed _"cedric"_) is a mid-range smartphone from Motorola mobility.
-It was announced on February 2017.
-
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core 1.4 GHz Cortex-A53
+CPU     | Quad-core 1.4 GHz Cortex-A53 && Quad-core 1.1 GHz Cortex-A53
 Chipset | Qualcomm MSM8937 Snapdragon 430
-GPU     | Adreno 505
-Memory  | 2/3 GB RAM
-Shipped Android Version | 7.0
-Storage | 16/32 GB
-MicroSD | Up to 128 GB
-Battery | Li-Ion 2800mAh battery
-Display | 1920 x 1080 pixels, 5.0 inches (~441 ppi pixel density)
-Camera  | 13 MP, f/2.0, phase detection autofocus, LED flash
-Front Camera  |  5 MP, f/2.2
-
-Copyright 2017 - The LineageOS Project.
-
-![Moto G5](http://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5-1.jpg "Moto G5")
-
-------------------
-
-## How To Compile
-
-
-First you need to download and sync the minimal TWRP source
-
-    repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1 --depth=1 --current-branch
-    repo sync --force-broken --force-sync --current-branch
-
-
-Then clone the Cedric TWRP repo and dependencies
-
-    git clone https://github.com/Akipe/twrp_android_device_motorola_cedric -b twrp-7.1-64 device/motorola/cedric
-    git clone https://github.com/Akipe/twrp_android_device_motorola_msm8937-common -b twrp-7.1-64 device/motorola/msm8937-common
-    git clone https://github.com/moto8937/android_kernel_motorola_msm8937 -b cm-14.1 kernel/motorola/msm8937
-
-    git clone https://github.com/LineageOS/android_device_qcom_common -b cm-14.1 vendor/qcom/common
-    git clone https://github.com/LineageOS/android_vendor_qcom_opensource_cryptfs_hw -b cm-14.1 vendor/qcom/cryptfs_hw
-
-Or you can use my manifest at https://github.com/Akipe/android_development_manifest (*cedric_twrp-7.1-64.xml*)
-
-
-Type the following in a terminal prompt inside from inside the root of your working folder
-
-    source build/envsetup.sh
-    lunch # Select omni_cedric-userdebug
-    make -j$(nproc) recoveryimage
-
-
-The recovery image will be outputted at ```out/target/product/cedric/recovery.img```
-
-Finally you can boot for testing or flash the image :
-
-    fastboot boot recovery.img
-    # Or
-    fastboot flash recovery recovery.img
-
-
+GPU     | 450MHz Adreno 505
+Memory  | 2/3/4 GB (LPDDR3)
+Shipped Android Version | 7.1 (Nougat MR1)
+Storage | 32/64 GB (UFS --)
+MicroSD | Up to 256 GB
+Battery | Li-Ion 3000mAh battery (non-removable)
+Dimensions | 150 x 73.5 x 9.5 mm
+Display | 1080 x 1920 pixels, 5.2" -- IPS LCD, 16:9 ratio (~424 PPI density)
+Rear Camera  | 16.0 MP, LED flash (Samsung S5K3P3 f/2.0, 1/3.06")
+Front Camera | 5.0 MP/16.0 MP, LED flash (OmniVision OV5695_mot f/2.2 or --<!--Need XT1799-2 camera details-->)
+Release Month | August 2017
+ 
+![Moto G5S](https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5s-2.jpg "Moto G5S")
+ 
+<!-- Display | 1440 x 2560 pixels, 5.7" LTPS IPS LCD, 16:9 ratio (~515 PPI density)-->
+ 
+<!-- Places with -- are needed information yet to be inputed-->
+ 
