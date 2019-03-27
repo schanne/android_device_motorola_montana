@@ -14,10 +14,21 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/cedric
+DEVICE_PATH := device/motorola/montana
 
 -include device/motorola/msm8937-common/BoardConfigCommon.mk
 
+TARGET_RECOVERY_FSTAB       := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
+
+# Partitions
+BOARD_FLASH_BLOCK_SIZE              := 131072
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE   := ext4
+BOARD_BOOTIMAGE_PARTITION_SIZE      := 16777216    # mmcblk0p37
+BOARD_CACHEIMAGE_PARTITION_SIZE     := 268435456   # mmcblk0p52
+BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432      # mmcblk0p30
+BOARD_RECOVERYIMAGE_PARTITION_SIZE  := 16879616    # mmcblk0p38
+BOARD_SYSTEMIMAGE_PARTITION_SIZE    := 3623878656  # mmcblk0p53
+BOARD_USERDATAIMAGE_PARTITION_SIZE  := 26403126784 # mmcblk0p54
 
 # Kernel
-TARGET_KERNEL_CONFIG := cedric_defconfig
+TARGET_KERNEL_CONFIG := montana_defconfig
