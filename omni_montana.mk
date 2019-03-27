@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 
 # Define version
-TW_DEVICE_VERSION := 2
+TW_DEVICE_VERSION := 0
 
 # Screen density
 PRODUCT_AAPT_CONFIG         := normal
@@ -55,9 +55,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.sdcardfs=true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE          := cedric
-PRODUCT_NAME            := omni_cedric
-PRODUCT_MODEL           := Moto G5
+PRODUCT_DEVICE          := montana
+PRODUCT_NAME            := omni_montana
+PRODUCT_MODEL           := Moto G5S
 PRODUCT_BRAND           := Motorola
 PRODUCT_MANUFACTURER    := Motorola
 BOARD_VENDOR            := motorola
