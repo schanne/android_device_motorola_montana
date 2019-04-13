@@ -48,7 +48,7 @@ BUILD_FINGERPRINT := motorola/montana/montana:8.1.0/OPM7.181205.001/0fc62393eb:u
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G5s"
+    PRODUCT_NAME="Moto G5S"
 
 # for specific
 $(call inherit-product, vendor/motorola/montana/montana-vendor.mk)
