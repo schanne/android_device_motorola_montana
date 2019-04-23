@@ -14,4 +14,4 @@
 # limitations under the License.
 
  PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_montana.mk
+    $(LOCAL_DIR)/pixeldust_montana.mk
